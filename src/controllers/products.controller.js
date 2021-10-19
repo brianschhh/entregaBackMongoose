@@ -1,4 +1,5 @@
 import * as productService from "../services/products.service.js";
+import path from "path";
 
 export async function createProduct(req, res) {
   const { body } = req;
@@ -11,11 +12,25 @@ export async function createProduct(req, res) {
 }
 
 export async function getProducts(req, res) {
-  try {
-    const product = await productService.getProducts();
-    res.status(200).json({ product });
-  } catch (error) {
-    res.status(400).send(error.message);
+  // try {
+  const product = await productService.getProducts();
+
+  //   res.status(200).json({ product });
+  //   console.log(product);
+  // console.log("product", product);
+  // } catch (error) {
+  //   res.status(400).send(error.message);
+  // }
+
+  if (req.isAuthenticated()) {
+    if (!req.user.contador) req.user.contador = 0;
+    req.user.contador++;
+    res.render("products", {
+      nombre: req.user.displayName,
+      foto: req.user.photos[0].value,
+      contador: req.user.contador,
+      producto: product,
+    });
   }
 }
 
