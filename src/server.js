@@ -10,6 +10,19 @@ import handlebars from "express-handlebars";
 import passport from "passport";
 import { Strategy } from "passport-facebook";
 import path from "path";
+import minimist from "minimist";
+import { fork } from "child_process";
+
+const options = {
+  default: {
+    puerto: 8080,
+  },
+};
+const computo = fork("./src/randoms/calculo.js");
+
+const arg = minimist(process.argv.slice(2), options);
+
+console.log(arg);
 
 dotenv.config();
 
@@ -57,6 +70,14 @@ app.engine(".hbs", handlebars({ extname: ".hbs", defaultLayout: "main.hbs" }));
 app.set("view engine", ".hbs");
 app.use(express.static("public"));
 
+app.get("/api/sum", (req, res) => {
+  computo.on("message", (resultado) => {
+    res.status(200).json({ resultado });
+    console.log("resultado+++++", resultado);
+  });
+  computo.send("start");
+});
+
 app.get("/login", (req, res) => {
   res.sendFile(path.resolve() + "/public/login.html");
 });
@@ -70,6 +91,15 @@ app.get(
     failureRedirect: "/failLogin",
   })
 );
+
+app.get("/info", (req, res) => {
+  res.send(`directorio actual del trabajo:${process.cwd()},
+    id del proceso:${process.pid},
+    version de node :${process.version},
+    título del proceso: ${process.title},
+    sistema operativo :${process.platform},
+    uso de la memoria: ${process.memoryUsage()}`);
+});
 
 app.get("/", (req, res) => {
   if (req.isAuthenticated()) {
@@ -103,4 +133,4 @@ app.get("/logout", (req, res) => {
 
 app.use("/", router);
 
-app.listen(3001, () => console.log(emoji.get("fire"), "Server on port 3001"));
+app.listen(8080, () => console.log(emoji.get("fire"), "Server connect "));
