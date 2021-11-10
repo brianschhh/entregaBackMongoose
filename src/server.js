@@ -18,6 +18,9 @@ const options = {
     puerto: 8080,
   },
 };
+
+const PORT = process.argv[2] || 8080;
+
 const computo = fork("./src/randoms/calculo.js");
 
 const arg = minimist(process.argv.slice(2), options);
@@ -133,4 +136,6 @@ app.get("/logout", (req, res) => {
 
 app.use("/", router);
 
-app.listen(8080, () => console.log(emoji.get("fire"), "Server connect "));
+app.listen(PORT, () =>
+  console.log(emoji.get("fire"), `Server connect on port ${PORT} `)
+);
