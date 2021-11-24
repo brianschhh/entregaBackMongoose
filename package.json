@@ -6,7 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon --inspect src/server.js"
+    "start": "SET NODE_ENV=development&& nodemon --inspect ./src/server.js -m fork -p 8083",
+    "startprod": "SET NODE_ENV=production&& nodemon --inspect ./src/server.js -m fork -p 8083"
   },
   "keywords": [],
   "author": "",
@@ -22,6 +23,7 @@
     "express": "^4.17.1",
     "express-handlebars": "^5.3.4",
     "express-session": "^1.17.2",
+    "log4js": "^6.3.0",
     "minimist": "^1.2.5",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.13",

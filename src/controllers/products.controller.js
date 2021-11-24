@@ -1,5 +1,4 @@
 import * as productService from "../services/products.service.js";
-import path from "path";
 
 export async function createProduct(req, res) {
   const { body } = req;

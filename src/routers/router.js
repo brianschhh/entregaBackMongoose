@@ -1,6 +1,7 @@
 import express from "express";
 import * as productController from "../controllers/products.controller.js";
 import * as userController from "../controllers/users.controller.js";
+import * as apiController from "../controllers/api.controller.js";
 const router = new express.Router();
 
 router.get("/users", userController.getUsers);
@@ -12,5 +13,7 @@ router.get("/products", productController.getProducts);
 router.post("/products", productController.createProduct);
 router.delete("/pruducts/:productsid", productController.deleteProduct);
 router.patch("/pruducts/:productsid", productController.updateProduct);
+
+router.use("/randoms", apiController.randomNumbers);
 
 export default router;

@@ -1,0 +1,66 @@
+[2021-11-24T19:03:44.074] [ERROR] error - ReferenceError: logInf is not defined
+    at randomNumbers (file:///C:/Users/Brian%20Schmidt/Desktop/finalProyect2/src/controllers/api.controller.js:14:19)
+    at Layer.handle [as handle_request] (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:317:13)
+[2021-11-24T19:03:54.671] [ERROR] error - ReferenceError: logInf is not defined
+    at randomNumbers (file:///C:/Users/Brian%20Schmidt/Desktop/finalProyect2/src/controllers/api.controller.js:14:19)
+    at Layer.handle [as handle_request] (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:317:13)
+[2021-11-24T19:03:55.336] [ERROR] error - ReferenceError: logInf is not defined
+    at randomNumbers (file:///C:/Users/Brian%20Schmidt/Desktop/finalProyect2/src/controllers/api.controller.js:14:19)
+    at Layer.handle [as handle_request] (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:317:13)
+[2021-11-24T19:03:55.505] [ERROR] error - ReferenceError: logInf is not defined
+    at randomNumbers (file:///C:/Users/Brian%20Schmidt/Desktop/finalProyect2/src/controllers/api.controller.js:14:19)
+    at Layer.handle [as handle_request] (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:317:13)
+[2021-11-24T19:04:03.490] [ERROR] error - ReferenceError: logInf is not defined
+    at randomNumbers (file:///C:/Users/Brian%20Schmidt/Desktop/finalProyect2/src/controllers/api.controller.js:14:19)
+    at Layer.handle [as handle_request] (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:317:13)
+[2021-11-24T19:04:55.845] [ERROR] error - ReferenceError: logInf is not defined
+    at randomNumbers (file:///C:/Users/Brian%20Schmidt/Desktop/finalProyect2/src/controllers/api.controller.js:14:19)
+    at Layer.handle [as handle_request] (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Brian Schmidt\Desktop\finalProyect2\node_modules\express\lib\router\index.js:317:13)

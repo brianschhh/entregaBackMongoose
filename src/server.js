@@ -11,21 +11,28 @@ import passport from "passport";
 import { Strategy } from "passport-facebook";
 import path from "path";
 import minimist from "minimist";
-import { fork } from "child_process";
+// import { fork } from "child_process";
+import { logInfo, logWarning } from "./utils/logger.js";
+
+const { MONGODB_URI, SECRET, NODE_ENV } = process.env;
+// const PORT = parseInt(process.argv[2]) || 8080;
 
 const options = {
   default: {
-    puerto: 8080,
+    modo: "fork",
+    port: 8080,
+  },
+  alias: {
+    p: "port",
+    m: "modo",
   },
 };
 
-const PORT = process.argv[2] || 8080;
-
-const computo = fork("./src/randoms/calculo.js");
+// const computo = fork("./src/randoms/calculo.js");
 
 const arg = minimist(process.argv.slice(2), options);
 
-console.log(arg);
+console.log("arg", arg.m);
 
 dotenv.config();
 
@@ -72,14 +79,6 @@ app.use(passport.session());
 app.engine(".hbs", handlebars({ extname: ".hbs", defaultLayout: "main.hbs" }));
 app.set("view engine", ".hbs");
 app.use(express.static("public"));
-
-app.get("/api/sum", (req, res) => {
-  computo.on("message", (resultado) => {
-    res.status(200).json({ resultado });
-    console.log("resultado+++++", resultado);
-  });
-  computo.send("start");
-});
 
 app.get("/login", (req, res) => {
   res.sendFile(path.resolve() + "/public/login.html");
@@ -136,6 +135,14 @@ app.get("/logout", (req, res) => {
 
 app.use("/", router);
 
-app.listen(PORT, () =>
-  console.log(emoji.get("fire"), `Server connect on port ${PORT} `)
-);
+app.get("*", (req, res) => {
+  logWarning("Ruta no definida");
+  res.send("Ruta no definida");
+});
+
+app.listen(arg.p, () => {
+  let msg = `Server running on: http://localhost:${arg.p}`;
+  // console.log(emoji.get("fire"), `Server connect on port ${arg.p} `)
+  process.env.NODE_ENV == "development" ? console.log(msg) : logInfo(msg);
+  // console.log("proccess", process.env.NODE_ENV);
+});
